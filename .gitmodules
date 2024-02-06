@@ -1,0 +1,3 @@
+[submodule "portfolio"]
+ 	path = portfolio
+	url = https://github.com/ellaidev02/portfolio
