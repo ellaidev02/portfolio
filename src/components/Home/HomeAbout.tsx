@@ -31,6 +31,7 @@ const HomeAbout = () => {
           More about Me{" "}
         </button>
       </Link>
+      <div></div>
     </div>
   );
 };
