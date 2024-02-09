@@ -14,11 +14,6 @@ export const projectData = [
 
 export const allProjectData = [
     {
-        image: 'path-to-image-1',
-        categories: ['Web application','Anicha Digital Infrastucture pvt ltd'],
-        projectName: 'Campuzone ERP',
-    },
-    {
         image: 'path-to-image-2',
         categories:  ['Web application','Happy Begins'],
         projectName: 'Roadways Info',
@@ -26,23 +21,23 @@ export const allProjectData = [
     {
         image: 'path-to-image-2',
         categories:  ['Web application','Minnotra'],
-        projectName: 'TVS Live tracking dashboard',
+        projectName: 'TVS Live Tracking Dashboard',
     },
     {
         image: 'path-to-image-2',
-        categories: ['Web application','Personal Project'],
-        projectName: 'MERN stack blog application',
-    },
-
-    {
-        image: 'path-to-image-2',
-        categories: ['Mobile Application','Personal Project'],
-        projectName: 'Restaurant Mobile app',
+        categories: ['MERN Stack Web application','Personal Project'],
+        projectName: 'Blog Application',
     },
 
     {
         image: 'path-to-image-2',
         categories: ['Mobile Application','Personal Project'],
-        projectName: 'Job-Scan Mobile app',
+        projectName: 'Restaurant',
+    },
+
+    {
+        image: 'path-to-image-2',
+        categories: ['Mobile Application','Personal Project'],
+        projectName: 'Job-Scan',
     },
 ];
