@@ -16,6 +16,7 @@ interface ProjectsProps {
 const Project: React.FC<ProjectProps> = ({ categories, projectName }) => {
   return (
     <div>
+      <p className="px-2 mt-4">{projectName}</p>
       <div className="h-[250px] md:w-[400px] w-[280px] ml-1 md:ml-0 bg-secondary rounded-xl my-3"></div>
       <div className="flex gap-2 py-3">
         {categories?.map((category, index) => (
@@ -27,7 +28,6 @@ const Project: React.FC<ProjectProps> = ({ categories, projectName }) => {
           </p>
         ))}
       </div>
-      <p className="px-2 ">{projectName}</p>
     </div>
   );
 };
@@ -36,7 +36,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects, isTrue }) => {
   return (
     <div className="bg-primary p-3 my-5 rounded-[24px]">
       <div className="bg-primary rounded-[24px]">
-        <p className="pt-3 pl-5 text-[36px]">Explore My Projects</p>
+        <p className="pt-3 pl-2 text-[36px]">Explore My Projects</p>
       </div>
       <div className="flex gap-3 flex-wrap">
         {projects?.map((project, index) => (
