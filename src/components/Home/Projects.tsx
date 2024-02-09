@@ -17,7 +17,7 @@ const Project: React.FC<ProjectProps> = ({ categories, projectName }) => {
   return (
     <div>
       <p className="px-2 mt-4">{projectName}</p>
-      <div className="h-[250px] md:w-[400px] w-[280px] ml-1 md:ml-0 bg-secondary rounded-xl my-3"></div>
+      <div className="h-[250px] md:w-[400px] w-[280px] md:ml-0 bg-secondary rounded-xl my-3"></div>
       <div className="flex gap-2 py-3">
         {categories?.map((category, index) => (
           <p

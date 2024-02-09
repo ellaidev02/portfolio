@@ -8,7 +8,7 @@ import Header from "../components/common/Header";
 
 const Home = () => {
   return (
-    <div className="w-full">
+    <div>
       <div className="mb-5">
         <Header />
       </div>
