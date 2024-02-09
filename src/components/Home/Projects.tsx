@@ -13,19 +13,27 @@ interface ProjectsProps {
   isTrue?: boolean;
 }
 
-const Project: React.FC<ProjectProps> = ({ categories, projectName }) => {
+const Project: React.FC<ProjectProps> = ({
+  categories,
+  projectName,
+  image,
+}) => {
   return (
     <div>
       <p className="px-2 mt-4">{projectName}</p>
-      <div className="h-[250px] md:w-[400px] w-[280px] md:ml-0 bg-secondary rounded-xl my-3"></div>
+      <div className="my-3 cursor-pointer">
+        <img
+          src={image}
+          className="h-[250px] md:w-[400px] w-[280px] md:ml-0 bg-secondary rounded-xl "
+        />
+      </div>
       <div className="flex gap-2 py-3">
         {categories?.map((category, index) => (
-          <p
-            key={index}
-            className="bg-secondary text-themeColor p-1 px-2 text-[12px] rounded-xl"
-          >
-            {category}
-          </p>
+          <div key={index}>
+            <p className="bg-secondary text-themeColor p-1 px-2 text-[12px] rounded-xl">
+              {category}
+            </p>
+          </div>
         ))}
       </div>
     </div>
