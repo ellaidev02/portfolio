@@ -4,15 +4,19 @@ import Stack from "../components/Home/Stack";
 import Projects from "../components/Home/Projects";
 import { projectData } from "../constants/ProjectData";
 import { stack } from "../constants/StackData";
+import Header from "../components/common/Header";
 
 const Home = () => {
   return (
-    <>
+    <div className="w-full">
+      <div className="mb-5">
+        <Header />
+      </div>
       <HomeAbout />
       <Skills />
       <Projects projects={projectData} />
       <Stack stack={stack} />
-    </>
+    </div>
   );
 };
 

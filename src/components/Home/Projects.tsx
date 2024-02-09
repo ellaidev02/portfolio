@@ -16,7 +16,7 @@ interface ProjectsProps {
 const Project: React.FC<ProjectProps> = ({ categories, projectName }) => {
   return (
     <div>
-      <div className="h-[250px] w-[400px] bg-secondary rounded-xl my-3"></div>
+      <div className="h-[250px] md:w-[400px] w-[280px] ml-1 md:ml-0 bg-secondary rounded-xl my-3"></div>
       <div className="flex gap-2 py-3">
         {categories?.map((category, index) => (
           <p
@@ -35,18 +35,22 @@ const Project: React.FC<ProjectProps> = ({ categories, projectName }) => {
 const Projects: React.FC<ProjectsProps> = ({ projects, isTrue }) => {
   return (
     <div className="bg-primary p-3 my-5 rounded-[24px]">
-      <p className="mx-3">Projects</p>
+      <div className="bg-primary rounded-[24px]">
+        <p className="pt-3 pl-5 text-[36px]">Explore My Projects</p>
+      </div>
       <div className="flex gap-3 flex-wrap">
         {projects?.map((project, index) => (
           <Project key={index} {...project} />
         ))}
       </div>
       {!isTrue && (
-        <Link to="/allProjects" onClick={scrollToTop}>
-          <button className="bg-secondary w-[800px] mt-6 mb-2 mx-2 text-themeColor rounded-xl py-2">
-            All Projects
-          </button>
-        </Link>
+        <div className="flex justify-center">
+          <Link to="/allProjects" onClick={scrollToTop}>
+            <button className="bg-secondary p-4 mt-6 mb-2 mx-2 text-themeColor rounded-xl py-2">
+              All Projects
+            </button>
+          </Link>
+        </div>
       )}
     </div>
   );

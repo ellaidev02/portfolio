@@ -14,10 +14,11 @@ const HomeAbout = () => {
       </p>
 
       <p className="px-3 text-textSecondary font-light pt-5">
-        If you're in need of WordPress website development, web
-        application development, or mobile app development, Please feel free to reach out to me for any inquiries or
-        collaboration opportunities. I look forward to discussing how I can
-        contribute to your projects and help achieve your goals.
+        If you're in need of WordPress website development, web application
+        development, or mobile app development, Please feel free to reach out to
+        me for any inquiries or collaboration opportunities. I look forward to
+        discussing how I can contribute to your projects and help achieve your
+        goals.
       </p>
       <p className="px-3 text-textSecondary font-light pt-5">
         Let's connect and explore the possibilities of turning visions into
@@ -26,12 +27,13 @@ const HomeAbout = () => {
       <p className="px-3 text-themeColor font-light pt-2">
         ellaidhuraidev@gmail.com
       </p>
-      <Link to="/aboutMe" onClick={scrollToTop}>
-        <button className="bg-secondary w-[800px]  mt-6 mb-2 mx-2 text-themeColor  rounded-xl py-2">
-          More about Me{" "}
-        </button>
-      </Link>
-      <div></div>
+      <div className="flex justify-center">
+        <Link to="/aboutMe" onClick={scrollToTop}>
+          <button className="bg-secondary p-3  mt-6 mb-2 mx-2 text-themeColor  rounded-xl py-2">
+            More about Me{" "}
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

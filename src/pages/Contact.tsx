@@ -2,22 +2,26 @@ const Contact = () => {
   const contactDetails = [
     { id: 1, icon: "", title: "ellaidhuraidev@gmail.com" },
     { id: 2, icon: "", title: "+91 8610301262" },
-    { id: 3, icon: "", title: "Linkedin" },
+    { id: 3, icon: "", title: "https://www.linkedin.com/in/ellaidhurai" },
+    { id: 4, icon: "", title: "https://github.com/ellaidhurain" },
     // { id: 3, icon: "", title: "Twitter" },
     // { id: 3, icon: "", title: "Facebook" },
     // { id: 3, icon: "", title: "Instagram" },
   ];
   return (
-    <div className="w-[800px]">
-      <div className=" bg-primary rounded-[24px] mt-5">
-        <p className="py-3 pl-6 text-[36px]">Let's Connect</p>
+    <>
+      <div className=" bg-primary rounded-[24px] mt-5 ">
+        <p className="py-3 text-center text-[36px] mx-9 md:mx-0">Let's Connect</p>
       </div>
-      <div className=" bg-primary rounded-[24px] mt-5">
-        <p className="pt-3 pl-6 text-lg">Contact</p>
-        <div className="grid grid-cols-2 ">
+      <div className=" bg-primary rounded-[24px] mt-5 ">
+        {/* <p className="pt-3 text-center  text-lg">Contact</p> */}
+        <div className="flex flex-col md:flex-row w-full flex-wrap  justify-center">
           {contactDetails?.map((item, index) => (
-            <div key={index} className="mx-5 my-4 bg-secondary p-3 rounded-2xl">
-              <div className="flex">
+            <div
+              key={index}
+              className="md:mx-5 mb-8 my-4 text-sm md:text-[16px] bg-secondary py-3 px-3 mx-3 rounded-2xl"
+            >
+              <div className="flex md:w-[300px] w-[200px]">
                 <img src={item.icon} />
                 <p>{item.title}</p>
               </div>
@@ -48,7 +52,7 @@ const Contact = () => {
             Send Message
           </button>
         </div> */}
-    </div>
+    </>
   );
 };
 

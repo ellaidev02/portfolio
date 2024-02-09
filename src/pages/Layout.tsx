@@ -4,7 +4,6 @@ import { ReactNode } from "react";
 import Footer from "../components/common/Footer";
 import { LetsTalk } from "../components/common/LetsTalk";
 import NavMenu from "../components/common/NavMenu";
-import Header from "../components/common/Header";
 import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 
@@ -23,9 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children, isContact }) => {
 
   return (
     <div>
-      <div className="mb-5">
-        <Header />
-      </div>
+    
       {children}
       {!isContact && (
         <div className="cursor-pointer">
@@ -35,7 +32,7 @@ const Layout: React.FC<LayoutProps> = ({ children, isContact }) => {
         </div>
       )}
       <Footer />
-      <div className="mt-5 flex justify-center items-center fixed bottom-5 left-[500px]">
+      <div className="mt-5 flex justify-center items-center fixed bottom-5 md:left-[500px]">
         <NavMenu />
       </div>
     </div>
