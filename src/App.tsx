@@ -2,7 +2,6 @@ import "./App.css";
 import AboutMe from "./pages/AboutMe";
 import AllProjects from "./pages/AllProjects";
 import Home from "./pages/Home";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import FullStack from "./pages/Stack";
 import Contact from "./pages/Contact";
@@ -32,7 +31,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "allProjects",
+    path: "/allProjects",
     element: (
       <Layout>
         <AllProjects />

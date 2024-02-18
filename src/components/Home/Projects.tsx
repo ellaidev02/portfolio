@@ -6,6 +6,8 @@ interface ProjectProps {
   image: string; // Replace with the actual type of 'image'
   categories: string[]; // Replace with the actual type of 'categories'
   projectName: string; // Replace with the actual type of 'projectName'
+  url?: string;
+
 }
 
 interface ProjectsProps {
@@ -17,15 +19,18 @@ const Project: React.FC<ProjectProps> = ({
   categories,
   projectName,
   image,
+  url
 }) => {
   return (
     <div>
       <p className="px-2 mt-4">{projectName}</p>
       <div className="my-3 cursor-pointer">
-        <img
-          src={image}
-          className="h-[250px] md:w-[400px] w-[280px] md:ml-0 bg-secondary rounded-xl "
-        />
+        <a href={url} target="_blank">
+          <img
+            src={image}
+            className="h-[250px] md:w-[400px] w-[280px] md:ml-0 bg-secondary rounded-xl "
+          />
+        </a>
       </div>
       <div className="flex gap-2 py-3">
         {categories?.map((category, index) => (

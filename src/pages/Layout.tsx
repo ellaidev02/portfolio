@@ -1,5 +1,3 @@
-// Layout.js
-
 import { ReactNode } from "react";
 import Footer from "../components/common/Footer";
 import { LetsTalk } from "../components/common/LetsTalk";
@@ -22,7 +20,6 @@ const Layout: React.FC<LayoutProps> = ({ children, isContact }) => {
 
   return (
     <div>
-    
       {children}
       {!isContact && (
         <div className="cursor-pointer">
