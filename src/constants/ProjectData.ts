@@ -64,19 +64,19 @@ export const allProjectData = [
         projectName: 'CRM',
         url: "http://v1try.anichadigitalinfra.com:8000/"
     },
-    {
-        image: blog,
-        categories: ['MERN Stack Web application', 'Personal Project'],
-        projectName: 'Blog Application',
-        url: "https://snaplink.netlify.app/"
-    },
+    // {
+    //     image: blog,
+    //     categories: ['MERN Stack Web application', 'Personal Project'],
+    //     projectName: 'Blog Application',
+    //     url: "https://snaplink.netlify.app/"
+    // },
 
-    {
-        image: eCommerce,
-        categories: ['e-commerce website', 'Personal Project'],
-        projectName: 'Exclusive',
-        url: ""
-    },
+    // {
+    //     image: eCommerce,
+    //     categories: ['e-commerce website', 'Personal Project'],
+    //     projectName: 'Exclusive',
+    //     url: ""
+    // },
    
     {
         image: restaurant,
