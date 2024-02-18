@@ -2,8 +2,9 @@ import naaCashew from "../assets/images/naa-cashew.png";
 import roadWays from "../assets/images/Roadways-info.png";
 import blog from "../assets/images/Blog-app.png";
 import crm from "../assets/images/CRM.png";
-import eCommerce from "../assets/images/e-commerce1.png";
+// import eCommerce from "../assets/images/e-commerce1.png";
 import restaurant from "../assets/images/mock1.png";
+import hivefy from "../assets/images/HiveFy.png";
 import job from "../assets/images/mock2.png";
 import kalaimagal from "../assets/images/Kalaimagal-Vidhyashram.png";
 import kalaimagalEducational from "../assets/images/Kalaimahal-–-Education-Institutions.png";
@@ -64,12 +65,12 @@ export const allProjectData = [
         projectName: 'CRM',
         url: "http://v1try.anichadigitalinfra.com:8000/"
     },
-    // {
-    //     image: blog,
-    //     categories: ['MERN Stack Web application', 'Personal Project'],
-    //     projectName: 'Blog Application',
-    //     url: "https://snaplink.netlify.app/"
-    // },
+    {
+        image: hivefy,
+        categories: ['Design Studio', 'Personal Project'],
+        projectName: 'hivefy Design studio',
+        url: "https://ellaidhurain.github.io/portfolio-website/"
+    },
 
     // {
     //     image: eCommerce,
