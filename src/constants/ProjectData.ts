@@ -1,6 +1,6 @@
 import naaCashew from "../assets/images/naa-cashew.png";
 import roadWays from "../assets/images/Roadways-info.png";
-import blog from "../assets/images/Blog-app.png";
+// import blog from "../assets/images/Blog-app.png";
 import crm from "../assets/images/CRM.png";
 // import eCommerce from "../assets/images/e-commerce1.png";
 import restaurant from "../assets/images/mock1.png";
