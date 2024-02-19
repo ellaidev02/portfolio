@@ -23,7 +23,7 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <div>
-      <p className="px-2 mt-4">{projectName}</p>
+      <p className="px-2 mt-4 text-black font-bold">{projectName}</p>
       <div className="my-3 cursor-pointer">
         <a href={url} target="_blank">
           <img
@@ -35,7 +35,7 @@ const Project: React.FC<ProjectProps> = ({
       <div className="flex gap-2 py-3">
         {categories?.map((category, index) => (
           <div key={index}>
-            <p className="bg-secondary text-themeColor p-1 px-2 text-[12px] rounded-xl">
+            <p className="bg-gray-300 text-black font-bold p-1 px-2 text-[12px] rounded-xl">
               {category}
             </p>
           </div>
@@ -49,7 +49,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects, isTrue }) => {
   return (
     <div className="bg-primary p-3 my-5 rounded-[24px]">
       <div className="bg-primary rounded-[24px]">
-        <p className="pt-3 pl-2 text-[36px]">Explore My Projects</p>
+        <p className="pt-3 pl-2 text-[36px] text-black font-semibold">My Projects</p>
       </div>
       <div className="flex gap-3 flex-wrap">
         {projects?.map((project, index) => (
@@ -59,7 +59,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects, isTrue }) => {
       {!isTrue && (
         <div className="flex justify-center">
           <Link to="/allProjects" onClick={scrollToTop}>
-            <button className="bg-secondary p-4 mt-6 mb-2 mx-2 text-themeColor rounded-xl py-2">
+            <button className=" p-4 mt-6 mb-2 mx-2 bg-gray-300 text-black font-semibold rounded-xl py-2">
               All Projects
             </button>
           </Link>

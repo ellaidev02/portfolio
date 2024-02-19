@@ -13,9 +13,9 @@ interface StackProps {
 
 const Stack: React.FC<StackProps> = ({ stack, isFullStack }) => {
   return (
-    <div className=" bg-primary rounded-[24px]">
+    <div className=" bg-primary rounded-[24px] text-black font-semibold">
       <div className="bg-primary rounded-[24px]">
-        <p className="pt-3 pl-5 text-[36px]">Explore My Tech Stacks</p>
+        <p className="pt-3 pl-5 text-[36px]">My Tech Stacks</p>
       </div>
       {stack?.map((data, index) => (
         <div key={index} className="flex flex-wrap gap-4">
@@ -25,12 +25,12 @@ const Stack: React.FC<StackProps> = ({ stack, isFullStack }) => {
             </div>
             <div className="flex flex-col justify-center">
               <p>{data.title}</p>
-              <p className="text-textSecondary">{data.subTitle}</p>
+              <p className="text-textSecondary font-bold">{data.subTitle}</p>
             </div>
           </div>
           <div className="flex ">
-            <div className="w-[6px] md:ml-12 h-[100px] bg-secondary"></div>
-            <p className=" pb-4 mx-8 font-light text-textSecondary">
+            <div className="w-[6px] md:ml-12 h-[100px] "></div>
+            <p className="font-semibold pb-4 mx-8 text-gray-800">
               {data.description}
             </p>
           </div>
@@ -39,7 +39,7 @@ const Stack: React.FC<StackProps> = ({ stack, isFullStack }) => {
       {!isFullStack && (
         <div className="flex justify-center">
           <Link to="/fullStack" onClick={scrollToTop}>
-            <button className="bg-secondary p-4  mt-6 mx-5 mb-5 text-themeColor  rounded-xl py-2">
+            <button className=" bg-gray-300 text-black font-semibold p-4  mt-6 mx-5 mb-5  rounded-xl py-2">
               Full Stack
             </button>
           </Link>

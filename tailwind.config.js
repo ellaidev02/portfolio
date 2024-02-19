@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#111111', // Replace with your primary color
-        secondary: '#1A1A1A', // Replace with your secondary color
+        primary: '#FFFFFF', // Replace with your primary color
+        secondary: '#000000', // Replace with your secondary color
         textPrimary:'#FFFFFF',
-        textSecondary:"#999999",
+        textSecondary:"#000000",
         themeColor:'#FFD700',
         glassEffect:'#0F0F0F', //60%
         radius:'2xl'

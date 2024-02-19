@@ -2,9 +2,9 @@ const AboutMe = () => {
   return (
     <div>
       <div className="bg-primary rounded-[24px]">
-        <p className="pt-3 pl-5 text-[36px]">Get to Know Me Better!</p>
+        <p className="pt-3 pl-5 text-[36px] text-black font-semibold">Get to Know Me Better!</p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <p className="m-5 font-light text-textSecondary">
+          <p className="m-5 text-slate-800 font-semibold">
             My passion lies in crafting seamless user experiences for web and
             mobile applications. With a strong foundation in frontend
             technologies and a keen eye for design, I bring creativity and
@@ -13,28 +13,25 @@ const AboutMe = () => {
         </div>
       </div>
       <div className=" bg-primary rounded-[24px] mt-5 ">
-        <p className="pt-3 pl-5 text-lg">Education</p>
+        <p className="pt-3 pl-5 text-lg text-black font-bold">Education</p>
         <div className="flex flex-wrap gap-4 justify-left mx-5 ">
           <div>
             <span></span>
-            <p>Bachelor Degree in Civil Engineering</p>
-            <p className="font-light text-textSecondary">
-              M.Kumarasamy College of Engineering, Karur
-            </p>
-            <p className="font-light text-textSecondary mb-3">2016-2019</p>
+            <p className="text-slate-800 font-semibold">Bachelor of Engineering</p>
+      
+            <p className=" text-slate-800 font-semibold mb-3">2016-2019</p>
           </div>
         </div>
       </div>
       <div className=" bg-primary rounded-[24px] mt-5 mb-5">
-        <p className="pt-3 pl-5 text-lg">Experience</p>
+        <p className="pt-3 pl-5 text-lg font-bold text-black">Experience</p>
         <div className="flex flex-wrap gap-4 justify-left mx-5 ">
           <div>
-            <span></span>
-            <p>Frontend Web developer</p>
-            <p className="font-light text-textSecondary">
+            <p className="text-black font-semibold">Frontend Web developer</p>
+            <p className=" text-slate-800 font-semibold">
               Anicha digital infrastructure pvt ltd
             </p>
-            <p className="font-light text-textSecondary mb-3">
+            <p className=" text-slate-800 font-semibold mb-3">
               Jul 2022 - Jan 2024
             </p>
           </div>
@@ -42,9 +39,9 @@ const AboutMe = () => {
         <div className="flex flex-wrap gap-4 justify-left mx-5 ">
           <div>
             <span></span>
-            <p>Freelancer | Web developer | Mobile app developer </p>
-            {/* <p className="font-light text-textSecondary">Happy Begins</p> */}
-            <p className="font-light text-textSecondary mb-3">
+            <p className="font-bold text-black">Freelancer | Web developer | Mobile app developer </p>
+            {/* <p className="font-light text-slate-800 font-semibold">Happy Begins</p> */}
+            <p className=" text-slate-800 font-semibold mb-3">
               Jan 2024 - Present
             </p>
           </div>

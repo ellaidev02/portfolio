@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <>
       <div className=" bg-primary rounded-[24px] mt-5 ">
-        <p className="py-3 text-center text-[36px] mx-9 md:mx-0">Let's Connect</p>
+        <p className="py-3 text-center text-[36px] mx-9 md:mx-0 text-black font-semibold">Let's Connect</p>
       </div>
       <div className=" bg-primary rounded-[24px] mt-5 ">
         {/* <p className="pt-3 text-center  text-lg">Contact</p> */}
@@ -19,7 +19,7 @@ const Contact = () => {
           {contactDetails?.map((item, index) => (
             <div
               key={index}
-              className="md:mx-5 mb-8 my-4 text-sm md:text-[16px] bg-secondary py-3 px-3 mx-3 rounded-2xl"
+              className="md:mx-5 mb-8 my-4 text-sm md:text-[16px] bg-gray-300 text-black font-semibold py-3 px-3 mx-3 rounded-2xl"
             >
               <div className="flex md:w-[300px] w-[200px]">
                 <img src={item.icon} />

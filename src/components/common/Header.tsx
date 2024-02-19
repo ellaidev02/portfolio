@@ -19,23 +19,23 @@ const Header = () => {
             </Link>
           </div>
           <div className="name-container m-5  md:m-0 flex flex-col justify-center">
-            <p className="font-semibold text-left md:text-[24px] text-gray-200">
+            <p className="font-bold text-left md:text-[24px] text-black">
               ELLAIDHURAI N
             </p>
-            <div className="text-sm">
-              <p className="text-textSecondary">
+            <div className="font-semibold">
+              <p className="text-gray-800">
                 Freelancer | Web developer | Mobile app developer{" "}
               </p>
-              <p className="text-textSecondary text-sm">
+              <p className="text-gray-800  text-sm">
                 ellaidhuraidev@gmail.com
               </p>
             </div>
           </div>
         </div>
         <div className="flex gap-5 pb-4 md:pb-0">
-          <div className="flex w-3/5 justify-center items-center">
+          <div className="flex w-4/5 justify-center items-center">
             <p className="bg-green-900 p-2 m-3 md:m-0 rounded-2xl border ">
-              Open to work
+              Open to Collaborate
             </p>
           </div>
           <div className="icon-container w-1/5  flex justify-center items-center gap-2 md:mr-10">
