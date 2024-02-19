@@ -37,8 +37,8 @@ export const allProjectData = [
     },
     {
         image: naaCashew,
-        categories: ['e-commerce website', 'naaCashew'],
-        projectName: 'naaCashew',
+        categories: ['e-commerce website', 'NaaCashew'],
+        projectName: 'NaaCashew',
         url: "https://naacashew.com/"
     },
     {
@@ -68,7 +68,7 @@ export const allProjectData = [
     {
         image: hivefy,
         categories: ['Design Studio', 'Personal Project'],
-        projectName: 'hivefy Design studio',
+        projectName: 'Hivefy Design studio',
         url: "https://ellaidhurain.github.io/portfolio-website/"
     },
 
